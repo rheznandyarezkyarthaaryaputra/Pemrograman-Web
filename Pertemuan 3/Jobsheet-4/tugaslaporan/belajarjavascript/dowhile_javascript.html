@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Contoh Loop do...while dalam JavaScript</title>
+</head>
+<body>
+
+<h2>Demonstrasi Perulangan JavaScript do...while</h2>
+
+<p id="numberOutput"></p>
+
+<script>
+    var output = "";
+    var num = 0;
+
+    do {
+        output += "<br>Nomor ini adalah " + num;
+        num++;
+    } while (num < 10);
+
+    document.getElementById("numberOutput").innerHTML = output;
+</script>
+
+</body>
+</html>

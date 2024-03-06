@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Contoh Penggunaan switch/case dalam JavaScript</title>
+</head>
+<body>
+    <script>
+        var pilihan = prompt("Anda beruntung! Pilih hadiah Anda dengan memasukkan angka 1 sampai 5:");
+        var hadiah;
+
+        switch(pilihan) {
+            case "1":
+                hadiah = "Tisu";
+                break;
+            case "2":
+                hadiah = "Kotak Kopi";
+                break;
+            case "3":
+                hadiah = "Sticker";
+                break;
+            case "4":
+                hadiah = "Minyak Goreng";
+                break;
+            case "5":
+                hadiah = "Uang Rp 50.000";
+                break;
+            default:
+                document.write("<p>Maaf, pilihan tidak valid.</p>");
+        }
+
+        if(hadiah) {
+            document.write("<h2>Selamat! Anda mendapatkan " + hadiah + ".</h2>");
+        } else {
+            document.write("<p>Sayang sekali, Anda tidak mendapatkan hadiah.</p>");
+        }
+    </script>
+</body>
+</html>

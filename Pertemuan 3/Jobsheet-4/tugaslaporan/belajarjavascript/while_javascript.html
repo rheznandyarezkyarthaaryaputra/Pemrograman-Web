@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh Penggunaan while dalam JavaScript</title>
+</head>
+<body>
+
+<h2>Perulangan dengan JavaScript while</h2>
+
+<p id="listNumbers"></p>
+
+<script>
+    var result = "";
+    var counter = 0;
+
+    while (counter < 10) {
+        result += "<br>Angka saat ini adalah " + counter;
+        counter++;
+    }
+
+    document.getElementById("listNumbers").innerHTML = result;
+</script>
+
+</body>
+</html>

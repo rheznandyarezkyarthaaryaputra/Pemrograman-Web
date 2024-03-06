@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Autentikasi dengan Operator Ternary</title>
+</head>
+<body>
+    <script>
+        var username = prompt("Masukkan Username:");
+        var password = prompt("Masukkan Password:");
+
+        document.write(username === "mahasiswa" ? (password === "kopi" ? "<h2>Selamat datang</h2>" : "<p>Password salah, coba lagi</p>") : "<p>Anda tidak terdaftar</p>");
+    </script>
+</body>
+</html>

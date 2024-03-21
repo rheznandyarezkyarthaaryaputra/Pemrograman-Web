@@ -1,0 +1,17 @@
+ul {
+    list-style-type: none; /* remove default bullets */
+    padding-left: 20px; /* add some indentation for nested lists */
+}
+
+ul > li::before {
+    content: "• "; /* add bullet before the item */
+    padding-right: 5px; /* spacing between bullet and text */
+}
+
+ul > li > ul > li::before {
+    content: "◦ "; /* add different bullet style for level 2 */
+}
+
+ul > li > ul > li > ul > li::before {
+    content: "▪ "; /* add different bullet style for level 3 */
+}

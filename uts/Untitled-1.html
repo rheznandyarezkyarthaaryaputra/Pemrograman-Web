@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pembelian Tiket Bioskop</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
+</head>
+<body>
+<div class="form-container">
+    <form id="ticketForm" action="submit_ticket.php" method="POST" class="ticket-form">
+        <div class="form-group">
+            <label for="movie">Pilih Film:</label>
+            <select id="movie" name="movie" class="form-select">
+                <option value="Spiderman">Spiderman</option>
+                <option value="Batman">Batman</option>
+                <option value="Avatar">Avatar</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="tickets">Jumlah Tiket:</label>
+            <input type="number" id="tickets" name="tickets" min="1" max="10" class="form-input">
+        </div>
+        <button type="submit" class="submit-btn">Beli Tiket</button>
+    </form>
+</div>
+</body>
+</html>

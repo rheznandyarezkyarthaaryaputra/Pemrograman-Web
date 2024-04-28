@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tugas Bootstrap</title>
+        <!-- menyisipkan Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- menyisipkan javascript -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#jumbotron">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tentang-kami" data-toggle="collapse">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kontak" data-toggle="collapse">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Selamat Datang</h1>
+            <p class="lead">Ini adalah halaman web Menara Eiffel.</p>
+        </div>
+    </div>
+    <!-- Gambar -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="tower.jpg" class="img-fluid rounded" alt="Gambar Menara Eiffel">
+            </div>
+            <div class="col-md-6">
+                <h2>Menara Eiffel</h2>
+                <p>Menara Eiffel adalah sebuah menara yang terletak di Paris, Prancis.<br>
+                    Menara ini menjadi salah satu ikon terkenal Prancis dan salah satu tujuan wisata paling populer di dunia.<br>
+                    Didesain oleh insinyur Gustave Eiffel, menara ini selesai dibangun pada tahun 1889 sebagai bagian dari Pameran Dunia Paris.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- tentang kami -->
+    <div id="tentang-kami" class="collapse">
+        <div class="container mt-4">
+            <h2>Tentang Saya</h2>
+            <p>Nama saya adalah Ravsanjani Rafli A. Saya sedang berkuliah di XYZ.<br>
+                Saya newbie dalam pemrograman desain dan web.</p>
+        </div>
+    </div>
+
+    <!-- kontak -->
+    <div id="kontak" class="collapse">
+        <div class="container mt-4">
+            <h2>Kontak</h2>
+            <p>Email: <a href="mailto:rafliarafat12@gmail.com">rafliarafat12@gmail.com</a></p>
+        </div>
+    </div>
+    </body>
+</html>

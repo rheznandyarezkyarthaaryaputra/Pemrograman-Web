@@ -1,13 +1,23 @@
 <html>
+    <!-- <head> 
+    https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+    https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.
+    </head> -->
     <body>
         <div class="container-fluid">
             <div class="row">
                 <?php
                 include "menu.php";
+               // include "koneksi.php";
+                include "header.php";
+
 
                 $query_anggota= "SELECT count(id) as jml from anggota";
+                var_dump($query_anggota);
                 $result_anggota=mysqli_query($koneksi, $query_anggota);
                 $row_anggota= mysqli_fetch_assoc($result_anggota);
+                var_dump($row_anggota);
+                die();
                 
                 $query_jabatan= "SELECT count(id) as jml from jabatan";
                 $result_jabatan=mysqli_query($koneksi, $query_jabatan);
@@ -42,4 +52,7 @@
             </div>
         </div>
     </body>
+    <?php
+    include "footer.php";
+    ?>
 </html>

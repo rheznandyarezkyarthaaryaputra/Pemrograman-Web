@@ -5,9 +5,11 @@ if (!empty($_SESSION['username'])) {
     require '../fungsi/pesan_kilat.php';
     require '../fungsi/anti_injection.php';
     if (!empty($_GET['jabatan'])) {
+        
+        $id = antiinjection($koneksi, $_POST['id']);
         $jabatan = antiinjection($koneksi, $_POST['jabatan']);
         $keterangan = antiinjection($koneksi, $_POST['keterangan']);
-        $query = "INSERT INTO jabatan (jabatan, keterangan) VALUES('$jabatan', '$keterangan')";
+        $query = "INSERT INTO jabatan (id,jabatan, keterangan) VALUES('$id','$jabatan','$keterangan')";
         if (mysqli_query($koneksi, $query)) {
             pesan(
                 'success',

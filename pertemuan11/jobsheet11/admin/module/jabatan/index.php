@@ -39,11 +39,15 @@
                             $no = 1;
                             $query = "SELECT * FROM jabatan order by id desc";
                             $reqult = mysqli_query($koneksi, $query);
-                            while ($row = mysqli_fetch_assoc($reqult)) {
+                            while ($row = mysqli_fetch_assoc($reqult))
+                        // var_dump($row);
+                       // die(); 
+                       {
                             ?>
 
                                 <tr>
                                     <th scope="row"><?= $no++ ?></th>
+                                    <td><?= $row['id'] ?></td>  
                                     <td><?= $row['jabatan'] ?></td>
                                     <td><?= $row['keterangan'] ?></td>
                                     <td>
@@ -65,6 +69,10 @@
                             </div>
                             <form action="fungsi/tambah.php?jabatan=tambah" method="post">
                                 <div class="modal-body">
+                                <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">id Jabatan:</label>
+                                        <input type="text" name="id" class="form-control" id="recipient-name">
+                                    </div>
                                     <div class="mb-3">
                                         <label for="recipient-name" class="col-form-label">Nama Jabatan:</label>
                                         <input type="text" name="jabatan" class="form-control" id="recipient-name">

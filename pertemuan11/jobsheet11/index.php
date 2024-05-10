@@ -8,7 +8,7 @@ if(!empty($_SESSION['level'])){
 
     include 'admin/template/header.php';
     if(!empty($_GET['page'])){
-        include 'admin/module/' . $_GET['page'] . '/index.php';
+        include 'admin/module/'.$_GET['page'].'/index.php';
     } else{
         include 'admin/template/home.php';
     }
